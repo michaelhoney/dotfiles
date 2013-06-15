@@ -12,8 +12,11 @@ PS1='$(date +%H:%M) \w$(__git_ps1 " (%s)")\$ '
 alias dds="find . -name '*.DS_Store' -type f -delete"
 alias fdns='sudo dscacheutil -flushcache'
 alias ls='ls -lahF'
+alias o='open'
+alias rb='source ~/.bash_profile'
 alias s='subl'
 alias sd='subl .'
+alias sdf='subl ~/src/dotfiles'
 alias ssc='subl ~/.ssh/config'
 alias tre='tree -a -I .git'
 
