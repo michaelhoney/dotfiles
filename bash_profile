@@ -23,7 +23,7 @@ alias tre='tree -a -I .git'
 
 # Gem Bundler
 alias be='bundle exec'
-alias bi='bundle install --binstubs'
+alias bi='bundle install --binstubs --without production'
 
 # Git
 alias gci='git commit'
@@ -38,7 +38,7 @@ alias gs='git status -sb'
 # Rails
 alias dbm0='rake db:migrate VERSION=0'
 alias dbm='rake db:migrate db:test:clone'
-alias sc='rails console'
+alias sc='if [ -f script/console ]; then script/console; else rails console; fi'
 alias ss='./script/server'
 alias tl='tail -f log/development.log'
 alias ttl='tail -f log/test.log'
